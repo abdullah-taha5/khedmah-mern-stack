@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+
+}
+textarea {
+  resize: none;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.not-found {
+  text-align: center;
+    color: white;
+    margin-top: 45px;
+    font-weight: bold;
+}
+/* Start Navbar */
+
+.web-size {
+  background-color: #F7F8F8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+ ul li h5 {
+    color: #002F34;
+    border-top: 1px solid #002F34;
+    border-bottom: 1px solid #002F34;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+
+ li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.mobile-size {
+  display: none;
+  background-color: #F7F8F8;
+  padding: 10px 15px;
+}
+.toggle-icon {
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: 700;
+}
+.toggle-menu {
+  background-color: #e3e6f3;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: flex-start;
+ position: fixed;
+ height: 100vh;
+ width: 300px;
+ box-shadow: 0 40px 60px rgb(0 0 0 / 1%);
+ padding: 80px 0 0 10px;
+ transition: 0.5s;
+ top: 0;
+ z-index: 999999999;
+}
+.toggle-menu li {
+  margin-bottom: 15px;
+}
+.toggle-menu li:first-child {
+  cursor: pointer;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+@media (max-width: 992px) {
+  .mobile-size {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .web-size {
+    display: none;
+  }
+}
+/* End Navbar */
+/* Start Fresh recommendations */
+.fresh-recommendations {
+  margin: 40px 0;
+}
+.fresh-recommendations .container .parent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.fresh-recommendations .container .parent .child {
+  width: 33%;
+}
+/* End Fresh recommendations */
+/* Start Login and Register */
+
+form.form-user {
+  background-color: #fff;
+  width: fit-content;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  -o-transform: translate(-50%, -50%) !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+form.form-user h5 {
+  margin-bottom: 45px;
+  font-weight: 700;
+}
+form.form-user h5 span {
+  border-bottom: 2px solid #002f34;
+}
+form.form-user div {
+  position: relative;
+}
+form.form-user div span {
+  position: absolute;
+  top: 8px;
+  color: #ccc;
+}
+form.form-user div span.show-password {
+  right: 5px;
+  cursor: pointer;
+}
+form.form-user div input {
+  padding: 8px 25px;
+  border-bottom: 2px solid #ccc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 25px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+}
+form.form-user button {
+  width: 100%;
+  color: #fff;
+  background-color: #002f34;
+  padding: 8px 0;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin: 15px 0;
+}
+form.form-user a {
+  text-decoration: none;
+}
+form.form-user p {
+  color: #333;
+}
+
+/* End Login and Register */
+/* Start Admin Dashboard */
+.admin-dashboard {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 60px;
+}
+.admin-dashboard .child {
+  width: 25%;
+  cursor: pointer;
+}
+.admin-dashboard .child img {
+  width: 50%;
+  padding-bottom: 10px;
+}
+.admin-dashboard .child:last-child {
+  margin: 0 auto;
+}
+.admin-dashboard .child a, h5 {
+  color: #000;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .admin-dashboard .child {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .admin-dashboard .child img {
+    width: 30%;
+    padding-bottom: 10px;
+  }
+}
+/* End Admin Dashboard */
+
+/* Start open product */
+.parent-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.child-product {
+  width: 50%;
+  margin-right: 20px;
+  height: 100%;
+}
+.details-product {
+  display: flex;
+  flex-direction: column;
+}
+.details-product div {
+  background-color: #fff;
+    border: 1px solid rgba(0,47,52,.36);
+    border-radius: 4px;
+    padding: 1.6rem;
+    margin-top: 0.8rem;
+    width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+/* End open product */
+/* buttons react-slick */
+.slick-prev:before, .slick-next:before {
+  color: black !important;
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
